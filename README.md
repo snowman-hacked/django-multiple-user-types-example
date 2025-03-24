@@ -2,8 +2,7 @@
 
 [![Python Version](https://img.shields.io/badge/python-3.6-brightgreen.svg)](https://python.org)  
 [![Django Version](https://img.shields.io/badge/django-2.0-brightgreen.svg)](https://djangoproject.com)
-
-이 프로젝트는 **다양한 사용자 유형(Multiple User Types)**을 구현하는 예제를 보여주기 위해 만들어졌습니다.  
+ 
 이 Django 애플리케이션에서 **교사는 퀴즈를 생성**할 수 있고, **학생은 회원가입 후 관심 있는 주제의 퀴즈를 응시**할 수 있습니다.
 
 ![Django School Screenshot](https://simpleisbetterthancomplex.com/media/2018/01/teacher-quiz.png)
@@ -15,29 +14,30 @@
 
 ## 🛠️ 로컬에서 실행하는 방법
 
-### 1. 저장소를 클론하세요:
+### 1. 깃허브 저장소를 클론:
 
 ```bash
 git clone https://github.com/sibtc/django-multiple-user-types-example.git
 ```
 
-### 2. 필요한 패키지를 설치하세요:
+### 2. 필요한 패키지 설치:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3. 데이터베이스를 생성하세요:
+### 3. manage.py migration:
 
 ```bash
 python manage.py migrate
 ```
 
-### 4. 개발 서버를 실행하세요:
+### 4. 서버실행:
 
 ```bash
-python manage.py runserver
+python manage.py runserver 0.0.0.0:8000
 ```
+> settings.py ALLOW_HOSTS 수정 필요
 
 이제 프로젝트는 브라우저에서 다음 주소로 접속할 수 있습니다:
 
